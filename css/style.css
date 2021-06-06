@@ -1,0 +1,108 @@
+/*hover efects & animations*/
+.block-wraper {
+	width: 400px;
+	height: 400px;
+	background-color: lightblue;
+	position: relative;
+
+/*	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 2s;*/
+	transition: all 0.5s linear 2s;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);	
+	transition: all 0.5s linear;
+}
+
+.block-wraper:hover {
+	background-color: blue;
+}
+.child-box:hover {
+	background-color: red;
+	transform: translate(-50%,-50%) rotate(0deg);
+}
+.section-title:hover {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*animation*/
+.chat-icon {
+	height: 100px;
+	position: absolute;
+	animation: chatanimation 5s infinite;
+}
+.animation-block {
+	position: relative;
+	height: 200px;
+}
+/*section-hw*/
+.container-block {
+	width: 1160px;
+	margin: 0 auto;
+}
+.left-block {
+	display: inline-block;
+	width: 760px;
+	vertical-align: top;
+	margin-right: 40px;
+}
+.right-block {
+	display: inline-block;
+	width: 360px;
+	vertical-align: top;
+}
+.image-middle {
+	margin-top: 102px;
+	margin-bottom: 102px;
+}
+.image1 {
+	margin-bottom: 40px;
+}
+
+/*footer styles*/
+.footer-bg {
+	background-color: #A6ADB4;
+	padding-top: 56px;
+	padding-bottom: 60px;
+}
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+	display: inline-block;
+	vertical-align: top;
+}
+.block2 {
+	margin-left: 90px;
+	margin-right: 96px;
+}
+.block4 {
+	margin-left: 110px;
+	margin-right: 105px;
+}
+.block5 {
+	margin-right: 162px;
+}
+
+
+
+
+/*keyframes animation*/
+@keyframes chatanimation {
+	0%{left: 200px; transform: rotate(0deg);}
+	25%{left: 400px; transform: rotate(360deg);}
+	50%{left: 600px; transform: rotate(45deg);}
+	80%{left: 800px; transform: rotate(360deg);}
+	100%{left: 1000px;transform: rotate(45deg);}
+}
